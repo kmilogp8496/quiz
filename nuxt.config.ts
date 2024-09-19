@@ -5,13 +5,13 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
 
   // https://nuxt.com/modules
-  modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint'
-  ],
+  extends: ['@nuxt/ui-pro'],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxt/ui'],
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {},
+  hub: {
+    database:true
+  },
 
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
